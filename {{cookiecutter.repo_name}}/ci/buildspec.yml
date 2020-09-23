@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli
+      # Install dependencies to current directory
+      - pip install -e .[dev]
+
+  pre_build:
+    commands:
+      - python -m pytest test/test_{{ cookiecutter.package_name }}.py -v --cov=test/

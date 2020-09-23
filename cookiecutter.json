@@ -1,0 +1,8 @@
+{
+  "repo_name": "NewCompany-PythonLibrary",
+  "package_name": "company_package",
+  "initial_version_number": "0.0.1",
+  "short_description": "A new in-house Python library.",
+  "maintainer": "Company Tech Team",
+  "maintainer_email": "team@company.com"
+}
